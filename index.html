@@ -1,50 +1,45 @@
-<!DOCTYPE html>
-    <head>
-        <title>Box Model</title>
-     <style >
-         *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color:lightgrey;
-            align:center ;
-            }
-            .box{
-                margin:60px 55px;
-                padding:50px 40px;
-                border:20px solid purple;
-                width:610px;
-                height:280px;
-                text-align:center;
-                background-color: lightyellow;
-                border-radius: 10px;
-            }
-            .Container  {
-                background-color:#c5c5db;
-                border: 3px solid purple;
-                margin:25px 19px;
-                padding: 10px 19px;
-                border-radius: 20px;
-                box-sizing: border-box;
-            }
-        </style>
-    </head>
-    <body>
-        <div class = "box">
-            <div class = "Container ">
-            <h3>HTML</h3>
-            <p id="first">HTML (Hypertext Markup Language) is the code that is used to structure
-             a web page and its content. For example, content could be structured within a set of
-             paragraphs, a list of bulleted points, or using images and data tables.</p>
-         </div>
+<head>
+  <meta charset="utf-8">
+  <title>Box Model</title>
+  <style>
+    body {
+      background-color: pink;
+      color: #555555;
+      margin: 0;
 
-            <div class = "Container ">
-             <h3>CSS</h3>
-            <p id="Second">Cascading Style Sheets, fondly referred to as CSS, is a simple design 
-            language intended to simplify the process of making web pages presentable.
-            CSS handles the look and feel part of a web page. </p>
-        </div>
+    }
+
+    .container {
+      width: 55%;
+      margin: auto;
+    }
+
+    .box {
+      background-color: #333333;
+      color: #fff;
+      border: 5px solid blue;
+      padding: 50px;
+      margin: 150px 50px 50px 50px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>BOX MODEL</h1>
+      <p>In CSS, the term "box model" is used when talking about design and layout. <br>
+
+        The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+      <p>Explanation of the different parts:</p>
+      <ul>
+        <li><strong>Content</strong> - The content of the box, where text and images appear</li>
+        <li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
+        <li><strong>Border</strong> - A border that goes around the padding and content</li>
+        <li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent</li>
+      </ul>
     </div>
-</body>
-</html>              
+  </div>
+
+</html>
